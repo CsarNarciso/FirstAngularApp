@@ -9,5 +9,17 @@ import { Component } from "@angular/core";
 })
 export class EmployeesComponent{
 
-    title = 'Employees!'
+    registrationState = 'Nothing here...';
+
+    checkRegistrationState(event:Event){
+
+        if ( (<HTMLInputElement>event.target).value == "yes" ){
+
+            this.registrationState = 'Registered!'; 
+        }
+        else{
+
+            this.registrationState = 'Nothing here, again...';
+        }
+    }
 }

@@ -1,1 +1,4 @@
-<h1>{{title}}</h1>
+<h1>{{registrationState}}</h1>
+
+Registrarse: <input type="radio" value="yes" name="registrationButton" id="registrationButtons" (click)="checkRegistrationState($event)"> <br>
+Cancelar registro: <input type="radio" value="no" name="registrationButton" id="registrationButtons" (click)="checkRegistrationState($event)"> <br>
